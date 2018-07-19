@@ -1,0 +1,72 @@
+:root {
+  /* Super Mario World Inspired */
+  --bg-color: #729FCF;
+  --bar-color: #7AA45E;
+  --titlebg-color: #95C177;
+  --baralt-color:  #EBBA7F;
+  --barfontalt-color: #7AA45E;
+  --maintitle-color: #FFD700;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px 500px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.MainTitle {
+  color: var(--maintitle-color);
+}
+
+.GraphTitle {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  font-size: 40px;
+  background-color: var(--titlebg-color);
+  color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.BarChart {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 1 1 1 1;
+
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-bottom: 10px solid var(--bar-color);
+}
+
+.BarChart :nth-child(even) {
+  background-color: var(--baralt-color);
+  color: var(--barfontalt-color);
+  font-weight: bolder;
+}
+
+.BarChart-bar {
+  background-color: var(--bar-color);
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  width: 120px;
+  padding-top: 10px;
+  transition: background-color 1.2s;
+}
+
+.BarChart-bar:hover {
+  background-color: #02FF0F;
+  color: white;
+  font-weight: bold;
+}

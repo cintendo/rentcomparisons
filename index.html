@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css/site.css" />
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <title>Average Rent</title>
+    </head>
+    <body>
+      <div class="GraphTitle">
+        <span class="MainTitle">🏠 Average Rent (1br)</span> - June 2018
+      </div>
+      <div class="BarChart">
+        <!-- CURRENT STATIC DATA USED (CURRENT AS OF JUNE 2018)
+        San Francisco $2440
+        Oakland $1750   72.72%
+        Berkeley $2,113     86.60%
+        Seattle $1,320    54.10%
+        Las Vegas $920    37.70%
+        New York $2115    86.68% -->
+        <div class="BarChart-bar" style="height: 100%" onclick="alert('$2,440')">San Francisco</div>
+        <div class="BarChart-bar" style="height: 72.72%" onclick="alert('$1,750')">Oakland</div>
+        <div class="BarChart-bar" style="height: 86.60%" onclick="alert('$2,113')">Berkeley</div>
+        <div class="BarChart-bar" style="height: 54.10%" onclick="alert('$1,320')">Seattle</div>
+        <div class="BarChart-bar" style="height: 37.70%" onclick="alert('$920')">Las Vegas</div>
+        <div class="BarChart-bar" style="height: 86.68%" onclick="alert('$2,115')">New York</div>
+      </div>
+    </body>
+</html>
